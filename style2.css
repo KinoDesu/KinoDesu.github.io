@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --base-color: #e74d3c;
+    --secondary-color: #e74d3c;
+    --box-color: rgba(245, 245, 245, 0.815);
+    --shadow-color: rgba(248, 217, 13, 0.404);
+    --text-color:#0d0d0d;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#profile {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    align-items: center;
+}
+
+#image {
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+    object-position: top center;
+    margin-right: 5px;
+    scale: 80%;
+}
+
+#image:hover{
+    transition: 0.25s;
+    scale: 105%;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#nome {
+    align-self: start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: start;
+    align-items: start;
+    font-size: 20px;
+}
+
+.infos {
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.logos {
+    margin-right: 10px;
+    font-size: 50px;
+    color: white;
+}
+
+.logos:hover{
+    transition: .2s;
+    color: var(--secondary-color);
+}
+
+#boxes {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin: 20px;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-top: 10px solid var(--secondary-color);
+    background-color: var(--box-color);
+    box-shadow: 10px 10px 10px var(--shadow-color);
+    border-radius: 5px 5px 0 5px;
+    padding: 15px 0;
+    line-height: 25px;
+    text-align: center;
+}
+
+.know{
+    text-align: left;
+}
+
+table, td, th{
+    border: 1px solid #004b6b;
+}
+
+table{
+    border: 3px solid #004b6b;
+}
+
+th{
+    border-bottom: 3px solid #004b6b;
+}
+
+th:first-of-type{
+    background-color: #004b6b;
+    border-right: 3px solid #004b6b;
+}
+
+td:nth-child(1), td:nth-child(5), td:nth-child(9){
+    border: none;
+    border-bottom: 1px solid #004b6b;
+    border-right: 3px solid #004b6b;
+}
+
+table{
+    border-collapse: collapse;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+}
